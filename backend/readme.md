@@ -6,7 +6,8 @@
 
 [TODO]
 
-- Setup prettier/etc
+- Setup prettier/husky/lint/etc
 - Dockerfiles
 - Tests / Jest / Supertest
 - ...
+- DDD

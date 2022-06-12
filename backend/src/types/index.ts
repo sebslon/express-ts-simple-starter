@@ -23,3 +23,11 @@ export interface TRequest<T extends Query, U> extends Express.Request {
 export interface TResponse<ResBody> extends Express.Response {
   json: Send<ResBody, this>;
 }
+
+// Repositories for example
+
+export interface IRepository<T> {}
+
+export interface SampleRepository extends IRepository<any> {
+  getUser(name: string): string | undefined;
+}

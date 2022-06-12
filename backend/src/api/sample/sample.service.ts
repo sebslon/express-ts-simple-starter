@@ -1,12 +1,15 @@
-import { inMemoryRepository } from "../../database/memory";
-
 import { AppError } from "../../helpers/error";
+import { IRepository, SampleRepository } from "../../types";
 
 export class SampleService {
-  private repository = new inMemoryRepository(); // TODO: Create generic interfaces
+  sampleRepository: SampleRepository;
+
+  constructor(repository: SampleRepository) {
+    this.sampleRepository = repository;
+  }
 
   sayHelloFromUser(name: string) {
-    const user = this.repository.getUser(name);
+    const user = this.sampleRepository.getUser(name);
 
     if (!user) throw new AppError(400, "User not found");
 
