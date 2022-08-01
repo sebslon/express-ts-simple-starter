@@ -7,7 +7,8 @@
 [TODO]
 
 - Setup prettier/husky/lint/etc
-- Dockerfiles
+- Dockerfiles / Kubernetes deployment config files
 - Tests / Jest / Supertest
+- CI/CD setup
 - ...
 - DDD
