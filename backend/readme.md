@@ -12,3 +12,4 @@
 - CI/CD setup
 - ...
 - DDD
+- Auth Module / RBAC
