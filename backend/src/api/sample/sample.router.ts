@@ -1,6 +1,6 @@
 import { Router } from 'express';
 
-import { IRouter } from '../../types';
+import { IRouter } from '@app-types/requests';
 
 import { SampleController } from './sample.controller';
 

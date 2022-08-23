@@ -1,13 +1,13 @@
-require("express-async-errors"); // Handling async errors in express (no need for try/catch)
+require('express-async-errors'); // Handling async errors in express (no need for try/catch)
 
-import express, { Application } from "express";
+import express, { Application } from 'express';
 
-import { logger } from "./src/middlewares/logger";
-import { errorMiddleware } from "./src/middlewares/error-middleware";
+import { logger } from './src/middlewares/logger';
+import { errorMiddleware } from './src/middlewares/error-middleware';
 
-import { Server } from "http";
+import { Server } from 'http';
 
-import { IRouter } from "./src/types";
+import { IRouter } from '@app-types/requests';
 
 export class App {
   private _server!: Server;
@@ -31,7 +31,7 @@ export class App {
 
   private initializeControllers(controllers: IRouter[]) {
     controllers.forEach((controllers) => {
-      this.app.use("/api" + controllers.path, controllers.router);
+      this.app.use('/api' + controllers.path, controllers.router);
     });
   }
 

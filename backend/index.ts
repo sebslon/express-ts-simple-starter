@@ -1,6 +1,10 @@
-import { App } from "./app";
+import addPathAliases from './path-aliases';
 
-import { SampleRouter } from "./src/api/sample/sample.router";
+addPathAliases();
+
+import { App } from './app';
+
+import { SampleRouter } from './src/api/sample/sample.router';
 
 export const server = new App([new SampleRouter()]);
 

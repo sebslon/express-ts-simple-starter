@@ -1,6 +1,6 @@
-import { AppError } from '../../helpers/error';
+import { AppError } from '@helpers/error';
 
-import { SampleRepository } from '../../types';
+import { SampleRepository } from '@app-types/repository';
 
 import { inMemoryRepository } from '../../database/memory';
 
